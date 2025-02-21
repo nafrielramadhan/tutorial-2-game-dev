@@ -4,11 +4,11 @@
 
 Log yang dicetak: **“Reached Objective!”**
 
-1. **Coba gerakkan landasan ke batas area bawah, lalu gerakkan kembali ke atas hingga hampir menyentuh batas atas. Apa saja pesan log yang dicetak pada panel Output?**
+2. **Coba gerakkan landasan ke batas area bawah, lalu gerakkan kembali ke atas hingga hampir menyentuh batas atas. Apa saja pesan log yang dicetak pada panel Output?**
 
 Log yang dicetak: **“Reached Objective!”**
 
-1. **Buka scene MainLevel dengan tampilan workspace 2D. Apakah lokasi scene ObjectiveArea memiliki kaitan dengan pesan log yang dicetak pada panel Output pada percobaan sebelumnya?**
+3. **Buka scene MainLevel dengan tampilan workspace 2D. Apakah lokasi scene ObjectiveArea memiliki kaitan dengan pesan log yang dicetak pada panel Output pada percobaan sebelumnya?**
 
 Iya, berkaitan. Lokasi scene ObjectiveArea menjadi patokan lokasi scene lain ketika game dimainkan. Jika scene BlueShip mengenai scene ObjectiveArea, maka akan muncul log “Reached Objective!”.
 
@@ -24,13 +24,13 @@ print("Reached objective!")
 
 **Sekarang coba kamu inspeksi scene-scene pada contoh proyek tutorial 2 dan jawablah pertanyaan-pertanyaan berikut:**
 
-1. **Scene BlueShip dan StonePlatform sama-sama memiliki sebuah child node bertipe Sprite. Apa fungsi dari node bertipe Sprite?**
+4. **Scene BlueShip dan StonePlatform sama-sama memiliki sebuah child node bertipe Sprite. Apa fungsi dari node bertipe Sprite?**
 
 Node Sprite ini berfungsi untuk menampilkan tekstur 2D.
 
 Pada BlueShip dan StonePlatform, Sprite2D menggunakan gambar yang tersedia pada folder assets.
 
-1. **Root node dari scene BlueShip dan StonePlatform menggunakan tipe yang berbeda. BlueShip menggunakan tipe RigidBody2D, sedangkan StonePlatform menggunakan tipe StaticBody2D. Apa perbedaan dari masing-masing tipe node?**
+5. **Root node dari scene BlueShip dan StonePlatform menggunakan tipe yang berbeda. BlueShip menggunakan tipe RigidBody2D, sedangkan StonePlatform menggunakan tipe StaticBody2D. Apa perbedaan dari masing-masing tipe node?**
 
 Yang saya rasakan saat bermain game ini adalah StaticBody2D (StonePlatform) dapat menggerakkan RigidBody2D (BlueShip) dengan memberikan force ke RigidBody2D tersebut.
 
@@ -40,7 +40,7 @@ RigidBody2D: Objek yang merespons terhadap benturan atau gaya (force), tetapi ti
 
 StaticBody2D: Objek statis yang tidak merespons terhadap benturan, tetapi bisa mempengaruhi pergerakan objek lain (seperti landasan tempat RigidBody2D berdiri).
 
-1. **Ubah nilai atribut Mass pada tipe RigidBody2D secara bebas di scene BlueShip, lalu coba jalankan scene MainLevel. Apa yang terjadi?**
+6. **Ubah nilai atribut Mass pada tipe RigidBody2D secara bebas di scene BlueShip, lalu coba jalankan scene MainLevel. Apa yang terjadi?**
 
 Tidak ada perubahan yang dirasakan ketika saya coba besarkan mass-nya menjadi 1000kg maupun ringankan mass-nya menjadi 0.001kg.
 
@@ -50,13 +50,13 @@ Berat yang dirasakan saat saya menggerakkan StonePlatform ke atas juga tidak ber
 
 Hasilnya sama seperti jika mass-nya tetap di 1kg.
 
-1. **Ubah nilai atribut Disabled pada tipe CollisionShape2D di scene StonePlatform, lalu coba jalankan scene MainLevel. Apa yang terjadi?**
+7. **Ubah nilai atribut Disabled pada tipe CollisionShape2D di scene StonePlatform, lalu coba jalankan scene MainLevel. Apa yang terjadi?**
 
 Yang terjadi adalah BlueShip (RigidBody2D) jatuh ke bawah dan melewati StonePlatform.
 
 Tidak ada force yang menahan BlueShip berdiri di atas StonePlatform, karena CollisionShape2D pada StonePlatform telah dinonaktifkan, sehingga tidak ada deteksi tabrakan.
 
-1. **Pada scene MainLevel, coba manipulasi atribut Position, Rotation, dan Scale milik node BlueShip secara bebas. Apa yang terjadi pada visualisasi BlueShip di Viewport?**
+8. **Pada scene MainLevel, coba manipulasi atribut Position, Rotation, dan Scale milik node BlueShip secara bebas. Apa yang terjadi pada visualisasi BlueShip di Viewport?**
 
 Pada scene MainLevel, coba manipulasi atribut Position, Rotation, dan Scale milik node BlueShip secara bebas. Apa yang terjadi pada visualisasi BlueShip di Viewport?
 
@@ -86,7 +86,7 @@ https://lh7-rt.googleusercontent.com/docsz/AD_4nXcaopZbpfyKsRyK_UGxt3vuBSe0FCF8V
 
 https://lh7-rt.googleusercontent.com/docsz/AD_4nXcVltComcN8X7UYUdJ5z4FYQLH50kQqoZJ3KE7Q1xIZStpAbNEsnun2sG4iJGNemg62WbvNv4FJ_ZMrZscrIIZYgoSjPVfljGOMcWLm1g6tTBXZHqk-oFtxcvNOUfLUNU-q3ulx?key=N0F6D6p8bH8_b4B45e7YHyz8
 
-1. **Pada scene MainLevel, perhatikan nilai atribut Position node PlatformBlue, StonePlatform, dan StonePlatform2. Mengapa nilai Position node StonePlatform dan StonePlatform2 tidak sesuai dengan posisinya di dalam scene (menurut Inspector) namun visualisasinya berada di posisi yang tepat?**
+9. **Pada scene MainLevel, perhatikan nilai atribut Position node PlatformBlue, StonePlatform, dan StonePlatform2. Mengapa nilai Position node StonePlatform dan StonePlatform2 tidak sesuai dengan posisinya di dalam scene (menurut Inspector) namun visualisasinya berada di posisi yang tepat?**
 
 Nilai Position dari masing-masing node:
 
