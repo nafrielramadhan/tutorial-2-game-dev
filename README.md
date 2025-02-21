@@ -1,3 +1,5 @@
+**+Tutorial 2 Game Dev***
+
 **Sekarang coba gerakkan objek landasan ke atas sehingga objek pesawatnya hampir menyentuh batas atas area permainan/*window*. Kemudian jawablah pertanyaan-pertanyaan berikut:**
 
 1. **Apa saja pesan log yang dicetak pada panel Output?**
