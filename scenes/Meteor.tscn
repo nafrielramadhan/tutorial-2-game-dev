@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ch63udiv42u8a"]
+
+[ext_resource type="Texture2D" uid="uid://cq5yn6ecuv8qf" path="res://assets/meteorBrown_big1.png" id="1_6rfda"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mqmyx"]
+radius = 44.0454
+
+[node name="Meteor" type="StaticBody2D"]
+
+[node name="MeteorBrownBig1" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_6rfda")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -1)
+scale = Vector2(0.5, 0.5)
+shape = SubResource("CircleShape2D_mqmyx")
